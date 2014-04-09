@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Spraying</title>
+
+  <!-- Launch icons -->
+  <link rel="apple-touch-icon" href="img/icons/ios/icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/icon-72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/icon@2x.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/icon-72@2x.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/universal.css" />
+  <link rel="stylesheet" href="css/spraying.css">
+
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("21b5b03d56c32459d17071cb2073ffce");</script><!-- end Mixpanel -->
+
+</head>
+
+<body id="spraying">
+
+<div class="bg"></div>
+
+		
+		<div class="load-wrap"> 
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+		
+        <div class="showup">
+
+          <div class="disappear">
+           <!--  <img id="can-spraying"> --> <!-- if purple-page this is visible -->
+            <!-- <img id="can-spraying" src="img/can-blue.png"> -->  <!-- if blue-page this is visible -->
+            <!-- <img id="can-spraying" src="img/can-green.png"> --> <!-- if green-page this is visible -->
+          
+		  </div>
+        </div>
+      </div>
+
+
+      <div id="footer">
+        <div id="spray-text">
+          <p id="prepare">Just a moment...<br>preparing</p>
+          <p id="progress">Here we <span>gooo!</span></p>
+        </div>
+
+      </div>
+
+       <a href="index.html" id="cancel" class="second-anim"><span class="icon-arrow-left-small"></span> Tap here if you need to give up</a>
+
+      <div class="points-earned" id="tagged">
+        <p>Gongrats!</p>
+        <section class="points-section">
+        	<p><span>0</span><small> pts</small></p>
+        </section>
+      </div>
+
+      <div id="loading">
+          <div class="bar-percentage" data-percentage="101"></div>
+      </div>
+      
+    <script src="js/moment.min.js"></script>
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/spraying.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+
+    <script>
+		$(document).ready(function() {
+			$("#progress span").lettering();
+		});
+	</script>
+
+</body>
+</html>

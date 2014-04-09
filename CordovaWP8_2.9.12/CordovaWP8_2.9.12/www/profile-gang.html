@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Gang profile</title>
+
+  <!-- Launch icons -->
+  <link rel="apple-touch-icon" href="img/icons/ios/icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/icon-72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/icon@2x.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/icon-72@2x.png" />
+
+  <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/universal.css" />
+  <link rel="stylesheet" type="text/css" href="css/profile-gang.css" />
+  <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+
+  <!-- New menu files -->
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+
+  <!-- Needed for the Modal window -->
+  <script src="js/modernizr.custom_modal.js"></script>
+  
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("21b5b03d56c32459d17071cb2073ffce");</script><!-- end Mixpanel -->
+
+</head>
+
+<body id="gang-profile">
+
+ <div class="bg"></div>
+
+
+  <div class='rmm' data-menu-style = "minimal">
+    <ul>
+      <li>
+        <a href='index.html'>Home</a>
+      </li>
+      <li>
+        <a href='profile.html'>Profile</a>
+      </li>
+      <li>
+        <a href='chat.html'>Chat</a>
+      </li>
+      <li>
+        <a href='leaderboard.html'>Leaderboard</a>
+      </li>
+      <li>
+        <a href='tweaks.html'>Tweaks</a>
+      </li>
+      <li>
+        <a href='faq.html'>Help</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="md-modal modal-members md-effect-12" id="modal-members">
+    <div class="md-content">
+      <div>
+       <li class="description-title">Time since Last Action</li>
+        <i class="modal-icon icon-dudes"></i>
+        <ul class="members-list">
+		
+           <!--Model 
+		   <li><span class="icon-hourglass"></span><span class="member-time">11:22:00</span><span class="member-name">The Majestic Master</span></li> 
+		   -->
+
+
+        </ul>
+      </div>
+    </div>
+    <button class="md-close"><span class="icon-arrow-left-small"></span></button>
+  </div>
+
+  <div class="md-modal md-effect-12" id="modal-gang-description">
+    <div class="md-content">
+      <div>
+       <h2 class="description-title">The Legend</h2>
+       <i class="modal-icon icon-droplet"></i> 
+                <p id = "legend" class="description-legend">             
+                </p>
+      </div>
+    </div>
+    <button class="md-close"><span class="icon-arrow-left-small"></span></button>
+  </div>
+
+    <div class="md-modal modal-points md-effect-12" id="modal-points">
+    <div class="md-content">
+      <div>
+       <li class="description-title">Points</li>
+       <i class="modal-icon bigger icon-star"></i>
+       <i class="modal-icon smaller rotate topright icon-star"></i>
+       <i class="modal-icon tiny icon-star"></i>   
+          <ul class="members-points-list">
+            <!--Model 
+			<li><span class="icons-star"></span><span class="member-points">45 d</span><span class="member-name">The Majestic Master</span></li> 
+			-->
+
+          </ul>
+      </div>
+    </div>
+    <button class="md-close"><span class="icon-arrow-left-small"></span></button>
+  </div>
+
+      <div class="md-modal modal-walked modalt-alt-color md-effect-12" id="modal-walked">
+    <div class="md-content">
+      <div>
+       <li class="description-title">Other Achievments</li>
+       <i class="modal-icon icon-paperplane"></i>
+        <ul class="members-list">
+          <li><span class="icons-paperplane"></span><span class="member-time">45 d</span>The Majestic Master</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">45 d</span>The Nifty Conjurer</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">44 d</span>The Whispering Whiz</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">43 d</span>The Terrific Nightowl</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">43 d</span>Fire Panther</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">42 d</span>Captain Lucky Robin</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">41 d</span>Doctor Famous Fighter</li>
+          <li><span class="icons-paperplane"></span><span class="member-time">41 d</span>Agent Fancy Cat</li>
+
+        </ul>
+      </div>
+    </div>
+    <button class="md-close"><span class="icon-arrow-left-small"></span></button>
+  </div>
+
+  <div class="md-modal modalt-alt-color md-effect-12" id="modal-events">
+    <div class="md-content">
+      <div>
+       <h2 class="description-title">Events</h2>
+      </div>
+    </div>
+    <button class="md-close"><span class="icon-arrow-left-small"></span></button>
+  </div>
+
+
+
+  <div class="container">
+
+     <div class="gang-tiles">
+
+            <div class="row-one">
+                <div>
+                  <h2 class="gang-name" id="name"></h2><i class="info-icon icon-dudes"></i>
+                   <i class="icon-message-bubble2"></i>
+                  <p class="slogan" id="slogan"></p>
+                </div>
+            </div><!-- /row-one -->
+
+             <div class="row-two">
+                <div>
+                  <h3><i class="info-icon icon-history"></i><span class="latest-event">If possible some latest event here</span></h3>
+                </div>
+             </div><!-- /row-two -->
+
+            <div class="row-three">
+            
+                <div>
+                  <a href="#" class="modal-btn md-trigger" data-modal="modal-members">
+                    <h3><i class="info-icon icon-dudes"></i>Members</h3>
+                    <h2 class="gang-info members">100</h2>
+                  </a>
+                </div>
+
+                <div>
+                  <a href="#" class="modal-btn md-trigger" data-modal="modal-points">
+                    <h3><i class="info-icon icon-star"></i>Points</h3>
+                    <h2 class="gang-info points">11204</h2>
+                  </a>
+                </div>
+              
+                <div>
+                  <a href="#" class="modal-btn md-trigger" data-modal="modal-walked">
+                    <h3><i class="info-icon icon-paperplane"></i>Walked</h3>
+                    <h2 class="gang-info walked">42115</h2>
+                  </a>
+                </div>
+            </div><!-- /row-three -->
+
+           <!--  <div class="row-four">
+                <div>
+                  <a href="#" class="modal-btn md-trigger" data-modal="modal-cans">
+                    <h3><i class="info-icon icon-remove"></i>Something</h3>
+                    <p class="info" id="busts"></p>
+                 </a>
+                </div>
+                <div>
+                  <a href="#" class="modal-btn md-trigger" data-modal="modal-cans">
+                    <h3><i class="info-icon icon-spray"></i>Can</h3>
+                    <p class="info" id="busts"></p>
+                 </a>
+                </div>
+        
+                <div>
+                  <a href="#" class="modal-btn md-trigger" data-modal="modal-tag">
+                    <h3><i class="info-icon icon-tag"></i>Tag</h3>
+                    <p class="info" id="busted"></p>
+                  </a>
+                </div>            
+            </div> --><!-- /row-four -->
+
+      </div><!-- /gang-tiles-->
+
+  </div><!-- /container -->
+             
+  <div class="md-overlay"></div>
+
+  <!-- Scripts -->
+
+  <script src='js/jquery-1.10.2.min.js'></script>
+  <script src="js/modalEffects-original.js"></script>
+  <script src="js/classie_menu.js"></script>
+  <script src="js/gnmenu.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/profile-gang.js"></script>
+
+</body>
+</html>

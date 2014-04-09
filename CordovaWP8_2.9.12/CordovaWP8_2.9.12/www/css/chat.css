@@ -1,0 +1,259 @@
+/*Styles for chat screen*/
+html, body {
+    height: 100%;
+    min-height: 100%;
+	-ms-touch-action:pan-y;
+}
+
+/*body {
+    background: url(../img/splash.jpg) no-repeat left;
+	-ms-touch-action:pan-y;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+body.blue {
+    background: url(../img/map_blue.jpg) no-repeat top center;
+    background-size: cover;
+	background-attachment: fixed;
+}
+
+body.purple {
+    background: url(../img/map_purple.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.green {
+    background: url(../img/map_green.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*body.purple {
+    background: url(../img/map_purple.jpg) no-repeat left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.blue {
+    background: url(../img/map_blue.jpg) no-repeat left;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.green {
+    background: url(../img/map_green.jpg) no-repeat left;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+.content {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+.chatter:before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent rgba(0,0,0,.3); 
+}
+
+.chatter {
+    position: relative;
+    top: 10px;
+    z-index: 1000;
+    margin: 0;
+    margin-bottom: 100px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+.chatter_field {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    line-height: 20px;
+    font-family: 'signika_negativesemibold';
+    color: #fff;
+    border: none;
+    outline: none;
+    background: rgba(0,0,0,1);
+ overflow: hidden;
+    z-index: 2000;
+}
+
+.chatter_field.chatter_message {
+    margin: 0;
+    padding: 11px 20px 9px 12px;
+    font-size: .8em;
+
+
+    resize: none;
+}
+
+textarea {
+    border-radius: 0;
+}
+
+body.purple ::-webkit-input-placeholder {
+    color: #A74DFF;
+}
+
+body.purple :-moz-placeholder {
+    color: #A74DFF;
+}
+
+body.purple ::-moz-placeholder {
+    color: #A74DFF;
+}
+
+body.purple :-ms-input-placeholder {
+    color: #A74DFF;
+}
+
+body.blue ::-webkit-input-placeholder {
+    color: #4A96FF;
+}
+
+body.blue :-moz-placeholder {
+    color: #4A96FF;
+}
+
+body.blue ::-moz-placeholder {
+    color: #4A96FF;
+}
+
+body.blue :-ms-input-placeholder {
+    color: #4A96FF;
+}
+
+body.green ::-webkit-input-placeholder {
+    color: #00E3B9;
+}
+
+body.green :-moz-placeholder {
+    color: #00E3B9;
+}
+
+body.green ::-moz-placeholder {
+    color: #00E3B9;
+}
+
+body.green :-ms-input-placeholder {
+    color: #00E3B9;
+}
+
+
+.chatter .chatter_msg_item {
+    position: relative;
+    display: block;
+    font-size: 1.2em;
+    padding: 4px 0 2px
+}
+
+.message-element {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    padding: 10px
+}
+
+
+.bubble {
+
+   display: block;
+
+}
+
+.sender {
+	display: inline-block;
+	position: relative;
+}
+
+.timestamp {
+   display: inline-block;
+   font-size: 0.8em;
+}
+
+.chatter_avatar {
+    display: inline-block;
+    padding-right: 20px;
+}
+body.purple .message-element {
+    background: rgba(16, 0, 21, 0.5);
+    border-bottom: 1px solid rgba(147,29,220,0.3);
+}
+
+body.blue .message-element {
+    background: rgba(3,50,160,0.5);
+    border-bottom: 1px solid rgba(28,106,220,.3);
+}
+
+body.green .message-element {
+    background: rgba(0, 30, 22, 0.5);
+    border-bottom: 1px solid rgba(11,184,189,0.3);
+}
+
+
+
+body.purple .myself, body.purple .myself .chatter_avatar {
+    color: #B160FF;
+}
+
+body.blue .myself, body.blue .myself .chatter_avatar {
+    color: #4A96FF;
+}
+
+body.green .myself, body.green .myself .chatter_avatar {
+    color: #00E3B9;
+}
+
+
+
+button#send-msg {
+    border: none;
+    bottom: 0;
+display: block;
+padding: 16px 5px;
+    position: fixed;
+    right: 0;
+    z-index: 2000;
+ background: black;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+body.purple button#send-msg {
+    color: #A74DFF;
+}
+
+body.blue button#send-msg {
+    color: #4A96FF;
+}
+
+body.green button#send-msg {
+    color: #00c3a1;
+}
+
+@media all and (min-width: 1024px) {
+
+}
+

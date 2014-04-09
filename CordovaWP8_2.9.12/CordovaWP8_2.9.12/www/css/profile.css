@@ -1,0 +1,311 @@
+/*Styles for profile screen*/
+
+
+body {
+	-ms-touch-action:none;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    padding-top: 50px;
+}
+
+body.purple {
+    background: url(../img/map_purple.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.blue {
+    background: url(../img/map_blue.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.green {
+    background: url(../img/map_green.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.blue .bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/blue.jpg) no-repeat left;
+    background-position: 0px 0px;
+    opacity: 0;
+    background-size: stretch;
+    -webkit-animation: blurblue 1 ease 3s;
+    z-index: 1;
+}
+
+body.purple .bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/purple.jpg) no-repeat left;
+    background-position: 0px 0px;
+    opacity: 0;
+    background-size: stretch;
+    -webkit-animation: blurpurple 1 ease 3s;
+    z-index: 1;
+}
+
+body.green .bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/green.jpg) no-repeat left;
+    background-position: 0px 0px;
+    opacity: 0;
+    background-size: stretch;
+    -webkit-animation: blurgreen 1 ease 3s;
+    z-index: 1;
+}
+
+@-webkit-keyframes blurblue {
+ 
+    50% {
+        background-position: 100% 100%;
+        opacity: .9;
+    };
+}
+
+@-webkit-keyframes blurpurple {
+ 
+    50% {
+        background-position: 100% 100%;
+        opacity: .9;
+    };
+}
+
+@-webkit-keyframes blurgreen {
+ 
+    50% {
+        background-position: 100% 100%;
+        opacity: .9;
+    };
+}
+
+h1 {
+    font-size: 1.7em;
+    line-height: 0;
+    text-transform: none;
+    position: relative;
+    position: relative;
+    top: -5px;
+}
+
+h3.mood-title {
+    font-size: .9em;
+    color: #fff;
+}
+
+.profile-tiles h3 {
+    font-family: 'signika_negativeregular';
+    font-size: .8em;
+    line-height: 0;
+    color: #fff;
+}
+
+body.purple .profile-tiles h3 {
+    color: #fff;
+}
+
+body.blue .profile-tiles h3 {
+    color: #4A96FF;
+}
+
+body.green .profile-tiles h3 {
+    color: #00c3a1;
+}
+
+.row-two, .row-three {
+    display: -moz-box;
+ /* Firefox */
+    display: -webkit-box;
+ /* Safari and Chrome */
+    display: -ms-flexbox;
+ /* Internet Explorer 10 */
+    display: box;
+    display: flex;
+}
+
+.profile-tiles p {
+    font-size: 1.1em;
+    line-height: .4em;
+    text-align: center;
+    font-family: 'signika_negativebold';
+}
+
+.profile-tiles h3.player-name {
+    font-size: 1em;
+    font-family: 'signika_negativebold';
+    line-height: 0;
+    position: relative;
+    text-align: center;
+    top: 10px;
+}
+
+.row-one div:before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent rgba(0,0,0,.5);
+}
+
+.row-one div {
+    width: 100%;
+    position: relative;
+    padding: 0 20px 0 10px;
+    background: rgba(0,0,0,.5);
+    height: 180px;
+}
+
+.row-two div, .row-three div {
+    -moz-box-flex: 1.0;
+ /* Firefox */
+    -webkit-box-flex: 1.0;
+ /* Safari and Chrome */
+    -ms-flex: 1.0;
+ /* Internet Explorer 10 */
+    box-flex: 1.0;
+    flex: 1;
+    background: rgba(0,0,0,.6);
+    border-top: 1px solid rgba(0,0,0,.3);
+    padding: 5px 5px 1px;
+}
+
+.row-two div:nth-child(1) {
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+
+.row-two div:nth-child(2) {
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+
+.row-two div:nth-child(3) {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.row-three div:nth-child(1) {
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+}
+
+.row-three div:nth-child(2) {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.row-three div:nth-child(3) {
+    -webkit-animation-delay: .35s;
+    animation-delay: .35s;
+}
+
+p.mood {
+    position: relative;
+    line-height: 1.1em;
+    top: 20px;
+    text-align: center;
+    font-family: 'signika_negativeregular';
+    font-size: .8em;
+    display: block;
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.profile-tiles i.info-icon {
+    color: #fff;
+    left: 0;
+    top: 0;
+    font-size: 1em;
+    opacity: .8;
+    padding: 10px;
+    position: relative;
+}
+
+body.purple .profile-tiles i.info-icon {
+    color: #9930FF;
+}
+
+body.blue .profile-tiles i.info-icon {
+    color: #4A96FF;
+}
+
+body.green .profile-tiles i.info-icon {
+    color: #00c3a1;
+}
+
+i.info-icon.icon-dude {
+    font-size: 4em;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.profile-tiles i.icon-bullhorn {
+    position: relative;
+    display: block;
+    top: 20px;
+    text-align: center;
+    font-size: 1.6em;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+body.purple .profile-tiles i.icon-bullhorn {
+    color: #9930FF;
+}
+
+body.blue .profile-tiles i.icon-bullhorn {
+    color: #4A96FF;
+}
+
+body.green .profile-tiles i.icon-bullhorn {
+    color: #00c3a1;
+}
+
+@media all and (min-width: 1024px) {
+
+    i.small {
+        font-size: 5em;
+    }
+
+    h2.gang-name {
+        font-size: 4em;
+    }
+
+    h3.mood {
+        font-size: 2em;
+    }
+
+    span.info {
+        font-size: 6em;
+    }
+
+    span.profile-icon {
+        font-size: 3em;
+    }
+
+    i.icon-icon-mood2 {
+        font-size: 3em;
+    };
+}

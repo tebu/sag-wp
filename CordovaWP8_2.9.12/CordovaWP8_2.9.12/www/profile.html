@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Player profile</title>
+
+    <!-- Launch icons -->
+  <link rel="apple-touch-icon" href="img/icons/ios/icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/icon-72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/icon@2x.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/icon-72@2x.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/universal.css" />
+  <link rel="stylesheet" type="text/css" href="css/profile.css" />
+  <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+
+  <!-- New menu files -->
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+  
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("21b5b03d56c32459d17071cb2073ffce");</script><!-- end Mixpanel -->
+
+  </head>
+
+  <body id="player-profile">
+
+  <div class="bg"></div>
+
+    <div class='rmm' data-menu-style = "minimal">
+      <ul>
+        <li>
+          <a href='index.html'>Home</a>
+        </li>
+        <li>
+          <a href='profile-gang.html'>Gang</a>
+        </li>
+        <li>
+          <a href='chat.html'>Chat</a>
+        </li>
+        <li>
+          <a href='leaderboard.html'>Leaderboard</a>
+        </li>
+        <li>
+          <a href='tweaks.html'>Tweaks</a>
+        </li>
+        <li>
+          <a href='faq.html'>Help</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      
+      <div class="profile-tiles">
+
+            <div class="row-one">
+
+              <div>
+                
+                <i class="icon-bullhorn"></i>
+                <i class="info-icon icon-dude"></i>
+                <h3 class="player-name"></h3>
+				<p class="mood"></p>
+                
+              </div>
+
+            </div>
+
+            <div class="row-two">
+
+              <div>
+                <h3><i class="info-icon icon-trophy"></i>Ranking</h3>
+                <p class="info" id="ranking"></p>
+              </div>
+
+              
+              <div>
+                <h3><i class="info-icon icon-star"></i>Points</h3>
+                <p class="info" id="points"></p>
+              </div>
+
+              <div>
+                <h3><i class="info-icon icon-droplet"></i>Sprayed</h3>
+                <p class="info" id="tags_created"></p>
+              </div>
+
+            </div>
+
+            <div class="row-three">
+
+              <div>
+                <h3><i class="info-icon icon-busted"></i>Busts</h3>
+                <p class="info" id="busts"></p>
+              </div>
+
+
+              <div>
+                <h3><i class="info-icon icon-busted"></i>Busted</h3>
+                <p class="info" id="busted"></p>
+              </div>
+
+
+              <div>
+                <h3><i class="info-icon icon-paperplane"></i>Distance</h3>
+                <p class="info">8900</p>
+              </div>
+
+            </div>
+
+    </div>
+
+
+    </div><!-- /container -->
+
+  <!-- Scripts -->
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src="js/classie_menu.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/profile.js"></script>
+
+</body>
+</html>

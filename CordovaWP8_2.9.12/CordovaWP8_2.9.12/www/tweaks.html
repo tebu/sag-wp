@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <title>Tweaks</title>
+
+  <!-- Launch icons -->
+  <link rel="apple-touch-icon" href="img/icons/ios/icon.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/icons/icon-72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/icons/icon@2x.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icons/icon-72@2x.png" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <link rel="stylesheet" type="text/css" href="css/universal.css" />
+  <link rel="stylesheet" type="text/css" href="css/tweaks.css" />
+  <link rel="stylesheet" href="css/responsivemobilemenu.css" type="text/css"/>
+
+  <!-- New menu files -->
+  <script src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="js/responsivemobilemenu.js"></script>
+
+  <!-- Needed for the Modal -->
+  <script src="js/modernizr.custom_modal.js"></script>
+  
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("21b5b03d56c32459d17071cb2073ffce");</script><!-- end Mixpanel -->
+
+  </head>
+
+
+<body id="tweaks">
+
+ <div class="bg"></div>
+
+
+    <div class="md-modal md-effect-5" id="modal-logout">
+
+            <div class="md-content">
+              <div>
+                <p>Really?</p>
+                <button class="confirm"><span>Yep</span>, I need to go  <i class="icon-arrow-rights-small"></i></button>
+                <button class="md-close"><i class=" icon-arrow-left-small"></i><span> Nope</span>, take me back</button>
+              </div>
+          </div>
+    </div><!-- /modal-logout -->
+
+  <div class="container">
+
+    <div class='rmm' data-menu-style = "minimal">
+      <ul>
+        <li>
+          <a href='index.html'>Home</a>
+        </li>
+        <li>
+          <a href='profile.html'>Profile</a>
+        </li>
+        <li>
+          <a href='profile-gang.html'>Gang</a>
+        </li>
+        <li>
+          <a href='chat.html'>Chat</a>
+        </li>
+        <li>
+          <a href='leaderboard.html'>Leaderboard</a>
+        </li>
+        <li>
+          <a href='faq.html'>Help</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="content">
+
+        <div class="centering">
+
+        <div class="tweak-section">
+
+            <div class="tweak">
+                <!-- <a href="#" class="btn2 md-trigger" data-modal="modal-info">?</a> -->
+                <div class="option"><i class="icon-bullhorn"></i> Set Mood</div>
+                <div class="mood">
+                 <!--  <label>Mood</label> -->
+                  <input type="text" class="input" placeholder="How you feel goes here?" id="mood">
+                </div>
+            </div><!-- /tweak -->
+
+            <div class="tweak">
+                <button href="#" class="button" id="save">Save  <i class="icon-arrow-rights-small"></i></button>
+            </div><!-- /tweak -->
+
+        </div>
+
+        <div class="tweak-section">
+
+            <div class="tweak logginout">
+             <div class="option"><i class="icon-logout"></i> Logging out</div>
+              <button href="#" class="button logout md-trigger" data-modal="modal-logout">Logout  <i class="icon-arrow-rights-small"></i></button>
+            </div><!-- /tweak -->
+
+        </div>
+
+        </div><!-- /centering -->
+
+    </div><!-- /content -->
+
+
+  </div><!-- /container -->
+
+  <div class="md-overlay"></div><!-- the overlay element -->
+
+
+  <!-- Scripts -->
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src="js/classie_menu.js"></script>
+    <script src="js/gnmenu.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/modalEffects-tweaks.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/tweaks.js"></script>
+
+</body>
+</html>
